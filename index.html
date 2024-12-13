@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    .huawei-wifi-login-page{
+        text-align: center;
+        
+        align-content: center;
+    }
+    .huawei-wifi-login-page-1{
+        background-color: #c1c1c1;
+        height: 200px;
+    }
+    .huawei-wifi-login-page-1 img{
+        height: 60px;
+        width: 60px;
+    }
+    .wifi-login-1{
+        height: 40px;
+        background-color: rgb(195, 84, 84);
+        align-content: center;
+        color: #fff;
+        font-weight: 600;
+    }
+    .wifi-login-2{
+        height: 40px;
+        color: #fff;
+        font-weight: 600;
+        background-color: rgb(181, 13, 13);
+        align-content: center;
+    }
+    .wifi-login-2 label{
+        margin-left: 50px;
+    }
+    .huawei-display{
+        display: inline-flex;
+        align-items: center;
+        margin-top: 130px;
+    }
+    .huawei-copyright{
+        margin: 0;
+          height: 250px;
+        background-color: rgb(87, 87, 87);
+    }
+    .huawei-copyright p{
+         margin: 0;
+    padding: 5px;
+    font-size: 15px;
+    }
+   
+</style>
+<body>
+    <div class="huawei-wifi-login-page">
+        <div class="huawei-wifi-login-page-1">
+    <div class="huawei-display">
+    <div><img src="img/huawei-png-logo.png" alt=""></div>
+    <div><h1>HS8145V5</h1></div> 
+</div>
+</div>
+<form action="index_of_status.html">
+        <div class="wifi-login-1">
+        <label for="account">Account:</label>
+        <input type="text" pattern="(?=.*[A-Z]).{1}(?=.*[a-z]).{8,}" name="ac" oninvalid="setCustomValidity('Please Enter a Account Name.')" title="Must be first one letter uppercase and at least 8 or more lowercase character." oninput="setCustomValidity('')" required><br>
+    </div>
+    <div class="wifi-login-2">
+        <label for="password">Password</label>
+        <input type="password" name="passwrd" oninvalid="setCustomValidity('Please Enter a password.')" oninput="setCustomValidity('')" title="Only eight digit of number 0-9 i.e. 12345678" pattern="(?=.*[0-9]).{8,}" required>
+        <input type="submit" name="login" class="login" value="Login">
+    </div>
+</form>
+    <div class="huawei-copyright">
+        <p>Copyright &copy; Huawei Technologies Pvt.Ltd 2009-2021. All rights reserved.</p>
+    </div></div>
+</body>
+</html>

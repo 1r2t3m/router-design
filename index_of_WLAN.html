@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFI Web Application</title>
+</head>
+<style>
+.menu-bar-1 ul{
+
+    text-align: center;
+}
+.menu-bar-1 ul li{
+    list-style: none;   
+    display: inline-flex;
+    margin: 2px;
+    padding: 2px;
+}
+.menu-bar-1 ul li a:hover{
+color: #ec00a5;
+  transition: 2s;
+}
+.menu-bar-1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.top-link-bar{
+    text-align: center;
+}
+.top-link-bar a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+hr{
+    width: 1150px;
+    height: 5px;
+    background-color: #a20404;
+    margin-bottom: 0px;
+    margin-top: -10px;
+    border-color: #a20404;
+    margin-left: 0;
+}
+.merge-in-one{
+    display: inline-flex;
+}
+.menu-bar-of-wan{
+    background-color: rgb(94, 92, 92);
+    width: 250px;
+    height:360px;
+}
+.menu-bar-of-wan ul li{
+    list-style: none;
+    padding: 5px;
+    margin-left: -40px;
+}
+.menu-bar-of-wan ul li:hover{
+    background-color: rgb(221, 230, 230);
+}
+.menu-bar-of-wan ul li a:hover{
+    color: rgb(192, 12, 12);
+}
+.menu-bar-of-wan ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.wlan-configuration-page {
+    margin-left: 20px;
+    margin-bottom: 20px;
+height: 200px;
+width: 95%;
+background-color: rgb(255 231 172);
+align-content: center;
+}
+.wlan-configuration-page p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.inline-column-side{
+display: inline-flex;
+}
+
+#wlan-configuration{
+    background-color: #c4c5c6; 
+    width:900px;;
+    height:1000px;
+}
+#wlan-wlan-configuration{
+    background-color: rgb(179 179 179);
+}
+#wlan-wlan-configuration p{
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 0px;
+    align-content: center;
+}
+#wlan-configuration table{
+   width: 95%;
+    margin-left:20px;
+     background-color:white;
+}
+
+footer{
+    height: 100px;
+    width:1150px;
+    background-color: #dadada;
+    display: inline-block;
+}
+footer div{
+    font-size: 10px;
+    padding: 5px;
+    display: inline-flex;
+}
+</style>
+<body>
+    <div class="merge-in-one">
+<div>
+    <img src="img/huawei-png-logo.png" alt="" style="margin-left:50px; height:60px; width:60px;">
+</div>
+<div>
+    <div class="top-link-bar"> 
+        <a href="#" style="font-size: 20px; margin-right:700px;">HS8145V5</a>
+        <a href="#" style="margin-right:-130px;">Logout</a>
+    </div>
+    <div class="menu-bar-1">
+        <ul>          
+            <li><a href="./index_of_status.html">Status</a></li>
+            <li><a href="./index_of_WAN.html">WAN</a></li>
+            <li><a href="./index_of_LAN.html">LAN</a></li>
+            <li><a href="./index_of_IPv6.html">IPv6</a></li>
+            <li><a href="./index_of_WLAN.html">WLAN</a></li>
+            <li><a href="./index_of_security.html">Security</a></li>
+            <li><a href="./index_of_route.html">Route</a></li>
+            <li><a href="./index_of_forward_rules.html">Forward Rules</a></li>
+            <li><a href="./index_of_network_app.html">Network Application</a></li>
+            <li><a href="./index_of_voice.html">Voice</a></li>
+            <li><a href="./index_of_system_tools.html">System Tools</a></li>
+            <li><a href="./index_of_bundle.html">Bundle</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<hr>
+<div class="inline-column-side">
+<div class="menu-bar-of-wan">
+
+<ul>
+    <li style="margin-top: -15px; border-bottom:#bebebe 5px;"><a href="#">2.4G Basic Network Setting</a></li>
+    <li><a href="WLAN/2.4G-Advanced-Network-Setting.html">2.4G Advanced Network Setting</a></li>
+    <li><a href="WLAN/5G-Basic-Network-Setting.html">5G Basic Network Setting</a></li>
+    <li><a href="WLAN/5G-Advanced-Network-Setting.html">5G Advanced Network Setting</a></li>
+    <li><a href="WLAN/Automatic-WiFi-Shutdown.html">Automatic WiFi Shutdown</a></li>
+    <li><a href="WLAN/WiFi-Coverage-Management.html">WiFi Coverage Management</a></li>
+</ul>
+</div>
+
+<div id="wlan-configuration">
+    <div id="wlan-wlan-configuration"><p>WLAN>2.4G Basic Network Settings</p></div>
+    <div style="margin-left: 20px;">
+    <div class="wlan-configuration-page">
+        <p>On this page, you can set the basic parameters of 2.4GHz wireless network(When the 2.4GHz wireless network is disabled, this page is blank).</p>
+        <p>1. Wireless network services may be interrupted temporarily after you modify wireless network parameters.</p>
+        <p>2. It is recommeded that you use the WPA2 or WPA/WPA2 authentication mode for security purposes.</p>
+    </div>
+    <div>
+        <input type="checkbox" checked>Enable WLAN
+    </div>
+    <div style="float: right; margin-right:20px; padding:5px;">  
+        <button>New</button>
+        <button>Delete</button>
+    </div>
+<table cellpadding="5" cellspacing="0" border="1">
+<tr>
+    <th></th>
+    <th>SSID Index</th>
+    <th>SSID Name</th>
+    <th>SSID Status</th>
+    <th>Number of Associted Devices</th>
+    <th>Broadcast SSID</th>
+    <th>Security Configuration</th>
+</tr>
+<tr>
+    <td><input type="checkbox"></td>
+    <td>1</td>
+    <td>SHREE SUNDARI BASIC_2.4</td>
+    <td>Enabled</td>
+    <td>32</td>
+    <td>Enabled</td>
+    <td>Configured</td>
+</tr>
+</table>
+<b>SSID Configuration Details</b>
+<table cellspacing="0" cellpadding="5" border="1">
+<tr>
+    <td>SSID Name:</td>
+    <td style="width: 600px;"><input type="text" value="SHREE SUNDARI BASIC_2.4" style="width: 150px;"><span style="color: red;">*</span>(1-32 characters)</td>
+</tr>
+<tr>
+    <td>Enable SSID:</td>
+    <td><input type="checkbox" checked></td>
+</tr>
+<tr>
+    <td>Number of Associted Devices:</td>
+    <td><input type="text" value="32" style="width: 150px;"><span style="color: red;">*</span>(1-32)</td>
+</tr>
+<tr>
+    <td>Broadcast SSID:</td>
+    <td><input type="checkbox" checked></td>
+</tr>
+<tr>
+    <td>Enable WMM:</td>
+    <td><input type="checkbox" checked></td>
+</tr>
+<tr>
+    <td>Authentication</td>
+    <td><select name="" id="">
+        <option>WPA/WPA2 PreSharedKey</option>
+        <option>Open</option>
+        <option>Shared</option>
+        <option>WPA PreSharedKey</option>
+        <option>WPA2 PreSharedKey</option>
+        <option>WPA Enterprise</option>
+        <option>WPA2 Enterprise</option>
+        <option>WPA/WPA2 Enterprise</option>
+    </select></td>
+</tr>
+<tr>
+    <td>Encryption Mode:</td>
+    <td><select><option>TKIP&AES</option></select></td>
+</tr>
+<tr>
+    <td>WPA PreSharedKey:</td>
+    <td><input type="text"><input type="checkbox">Hide<span style="color: red;">*</span>(8-63 characters or 64 hexadecimal characters)</td>
+</tr>
+<tr>
+    <td>WPA Group Key Regeneration Interval:</td>
+    <td><input type="text" value="3600"><span style="color: red;">*</span>(600-86400s)</td>
+</tr>
+<tr>
+    <td>Enable WPS:</td>
+    <td><input type="checkbox"></td>
+</tr>
+<tr>
+    <td>WPS Mode:</td>
+    <td><select name="" id=""><option value="">PBC</option></select></td>
+</tr>
+<tr>
+    <td>PBC:</td>
+    <td><input type="submit" value="Start WPS" disabled></td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <button>Apply</button>
+        <button>Cancel</button>
+    </td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<footer>  
+   
+    <div style="display: inline-block; text-align:center;">
+      <p><img src="img/QR-Code.jpg" height="50px" width="50px" alt=""></p>
+        <p>Click or scan to download the APP</p>
+    </div>
+    <div style="margin-left: 250px; display:inline-flex; align-items:center;">
+        <p><img src="img/huawei-png-logo-footer.png" style="height:15px; width:15px; margin:5px;"  alt=""></p>
+        <p>Copyright&copy;Huawei Technologies Co, Ltd. 2009-2021. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

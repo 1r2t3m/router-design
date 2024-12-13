@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFI Web Application</title>
+</head>
+<style>
+.menu-bar-1 ul{
+
+    text-align: center;
+}
+.menu-bar-1 ul li{
+    list-style: none;   
+    display: inline-flex;
+    margin: 2px;
+    padding: 2px;
+}
+.menu-bar-1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.top-link-bar{
+    text-align: center;
+}
+.top-link-bar a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+hr{
+    width: 1150px;
+    height: 5px;
+    background-color: #a20404;
+    margin-bottom: 0px;
+    margin-top: -10px;
+    border-color: #a20404;
+    margin-left: 0;
+}
+.merge-in-one{
+    display: inline-flex;
+}
+.menu-bar-of-status{
+    background-color: rgb(94, 92, 92);
+    width: 250px;
+    height:360px;
+}
+.menu-bar-of-status ul li{
+    list-style: none;
+    padding: 5px;
+    margin-left: -40px;
+}
+.menu-bar-of-status ul li:hover{
+    background-color: rgb(221, 230, 230);
+}
+.menu-bar-of-status ul li a:hover{
+    color: rgb(192, 12, 12);
+}
+.menu-bar-of-status ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.device-information-page {
+    margin-left: 20px;
+    margin-bottom: 20px;
+height: 60px;
+width: 95%;
+background-color: rgb(255 231 172);
+align-content: center;
+}
+.device-information-page p{
+    margin-left: 20px;
+}
+.inline-column-side{
+display: inline-flex;
+}
+.device-information-page-1{
+    margin-left:20px; 
+    background-color:whitesmoke;
+     color:red;
+     margin-right: 25px;
+}
+#device-information{
+    background-color: #c4c5c6; 
+    width:900px;;
+    height:800px;
+}
+#status-device-information{
+    background-color: rgb(179 179 179);
+}
+#status-device-information p{
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 0px;
+    align-content: center;
+}
+#device-information table{
+   width: 95%;
+    margin-left:20px;
+     background-color:white;
+}
+
+footer{
+    height: 100px;
+    width:1150px;
+    background-color: #dadada;
+    display: inline-block;
+}
+footer div{
+    font-size: 10px;
+    padding: 5px;
+    display: inline-flex;
+}
+</style>
+<body>
+    <div class="merge-in-one">
+<div>
+    <img src="../img/huawei-png-logo.png" alt="" style="margin-left:50px; height:60px; width:60px;">
+</div>
+<div>
+    <div class="top-link-bar"> 
+        <a href="#" style="font-size: 20px; margin-right:700px;">HS8145V5</a>
+        <a href="#" style="margin-right:-130px;">Logout</a>
+    </div>
+    <div class="menu-bar-1">
+        <ul>          
+            <li><a href="../index_of_status.html">Status</a></li>
+            <li><a href="../index_of_WAN.html">WAN</a></li>
+            <li><a href="../index_of_LAN.html">LAN</a></li>
+            <li><a href="../index_of_IPv6.html">IPv6</a></li>
+            <li><a href="../index_of_WLAN.html">WLAN</a></li>
+            <li><a href="../index_of_security.html">Security</a></li>
+            <li><a href="../index_of_route.html">Route</a></li>
+            <li><a href="../index_of_forward_rules.html">Forward Rules</a></li>
+            <li><a href="../index_of_network_app.html">Network Application</a></li>
+            <li><a href="../index_of_voice.html">Voice</a></li>
+            <li><a href="../index_of_system_tools.html">System Tools</a></li>
+            <li><a href="../index_of_bundle.html">Bundle</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<hr>
+<div class="inline-column-side">
+<div class="menu-bar-of-status">
+<ul>
+    <li style="margin-top: -15px;"><a href="WAN-Information.html">WAN Information</a></li>
+    <li><a href="VoIP-Information.html">VoIP Information</a></li>
+    <li><a href="WLAN-Information.html">WLAN Information</a></li>
+    <li><a href="Smart-WIFI-Coverage.html">Smart WIFI Coverage</a></li>
+    <li><a href="Eth-Port-Information.html">Eth Port Information</a></li>
+    <li><a href="DHCP-Information.html">DHCP Information</a></li>
+    <li><a href="Optical-Information.html">Optical Information</a></li>
+    <li><a href="index.html">Device Information</a></li>
+    <li><a href="Remote-Manage.html">Remote Manage</a></li>
+    <li><a href="User-Device-Information.html">User Device Information</a></li>
+    <li><a href="Service-Provisioning-Status.html">Service Provisioning Status</a></li>
+    <li><a href="Cloud-Platform-Status.html">Cloud Platform Status</a></li>
+</ul>
+</div>
+
+<div id="device-information">
+    <div id="status-device-information"><p>Status>Cloud Platform Status</p></div>
+  
+    <div style="margin-left:20px">
+    <div class="device-information-page">
+        <p>On this page, you can query the status of a connection between the device and the smart gateway application management platform</p>
+    </div>
+    <div>    
+        <table cellspacing="0"; cellpadding="5"; border="1">
+            <tr>
+                <td style="background-color: #dadada;">Connection Status of the Registration Center of the Operating Platform:</td>
+                <td>Not connected</td>
+            </tr>
+            <tr>
+                <td style="background-color: #dadada;">Connection Status of the Plug-in Center of the Operating Platform:</td>
+                <td>Not connected</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+
+</div>
+<footer>  
+   
+    <div style="display: inline-block; text-align:center;">
+        <p><img src="../img/QR-Code.jpg" height="50px" width="50px" alt=""></p>
+        <p>Click or scan to download the APP</p>
+    </div>
+    <div style="margin-left: 250px; display:inline-flex; align-items:center;">
+        <p><img src="../img/huawei-png-logo-footer.png" style="height:15px; width:15px; margin:5px;"  alt=""></p>
+        <p>Copyright&copy;Huawei Technologies Co, Ltd. 2009-2021. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

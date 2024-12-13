@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFI Web Application</title>
+</head>
+<style>
+.menu-bar-1 ul{
+
+    text-align: center;
+}
+.menu-bar-1 ul li{
+    list-style: none;   
+    display: inline-flex;
+    margin: 2px;
+    padding: 2px;
+}
+.menu-bar-1 ul li a:hover{
+color: #ec00a5;
+  transition: 2s;
+}
+.menu-bar-1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.top-link-bar{
+    text-align: center;
+}
+.top-link-bar a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+hr{
+    width: 1150px;
+    height: 5px;
+    background-color: #a20404;
+    margin-bottom: 0px;
+    margin-top: -10px;
+    border-color: #a20404;
+    margin-left: 0;
+}
+.merge-in-one{
+    display: inline-flex;
+}
+.menu-bar{
+    background-color: rgb(94, 92, 92);
+    width: 250px;
+    height:600px;
+}
+.menu-bar ul li{
+    list-style: none;
+    padding: 5px;
+    margin-left: -40px;
+}
+.menu-bar ul li:hover{
+    background-color: rgb(221, 230, 230);
+}
+.menu-bar ul li a:hover{
+    color: rgb(192, 12, 12);
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.system-tool-page {
+    margin-left: 20px;
+    margin-bottom: 20px;
+height: 60px;
+width: 95%;
+background-color: rgb(255 231 172);
+align-content: center;
+}
+.system-tool-page p{
+    margin-left: 20px;
+}
+.inline-column-side{
+display: inline-flex;
+}
+
+#system-tool{
+    background-color: #c4c5c6; 
+    width:900px;;
+    height:1100px;
+}
+#system-tool-reboot{
+    background-color: rgb(179 179 179);
+}
+#system-tool-reboot p{
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 0px;
+    align-content: center;
+}
+#system-tool table{
+   width: 95%;
+    margin-left:20px;
+     background-color:white;
+}
+
+footer{
+    height: 100px;
+    width:1150px;
+    background-color: #dadada;
+    display: inline-block;
+}
+footer div{
+    font-size: 10px;
+    padding: 5px;
+    display: inline-flex;
+}
+b{
+    margin-left: 20px;
+}
+</style>
+<body>
+    <div class="merge-in-one">
+<div>
+    <img src="../img/huawei-png-logo.png" alt="" style="margin-left:50px; height:60px; width:60px;">
+</div>
+<div>
+    <div class="top-link-bar"> 
+        <a href="#" style="font-size: 20px; margin-right:700px;">HS8145V5</a>
+        <a href="#" style="margin-right:-130px;">Logout</a>
+    </div>
+    <div class="menu-bar-1">
+        <ul>          
+            <li><a href="../index_of_status.html">Status</a></li>
+            <li><a href="../index_of_WAN.html">WAN</a></li>
+            <li><a href="../index_of_LAN.html">LAN</a></li>
+            <li><a href="../index_of_IPv6.html">IPv6</a></li>
+            <li><a href="../index_of_WLAN.html">WLAN</a></li>
+            <li><a href="../index_of_security.html">Security</a></li>
+            <li><a href="../index_of_route.html">Route</a></li>
+            <li><a href="../index_of_forward_rules.html">Forward Rules</a></li>
+            <li><a href="../index_of_network_app.html">Network Application</a></li>
+            <li><a href="../index_of_voice.html">Voice</a></li>
+            <li><a href="../index_of_system_tools.html">System Tools</a></li>
+            <li><a href="../index_of_bundle.html">Bundle</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<hr>
+<div class="inline-column-side">
+<div class="menu-bar">
+
+<ul>
+    <li style="margin-top: -15px; border-bottom:#bebebe 5px;"><a href="../index_of_system_tools.html">Reboot</a></li>
+    <li><a href="Configuration-File.html">Configuration File</a></li>
+    <li><a href="Firmware-Upgrade.html">Firmware Updgrade</a></li>
+    <li><a href="Restore-Default-Configuration.html">Restore Default-Configuration</a></li>
+    <li><a href="Maintenance.html">Maintenance</a></li>
+    <li><a href="VoIP-Statistics.html">VoIP Statistics</a></li>
+    <li><a href="VoIP-Diagnose.html">VoIP Diagnose</a></li>
+    <li><a href="Remote-Mirror.html">Remote Mirror</a></li>
+    <li><a href="User-Log.html">User Log</a></li>
+    <li><a href="Debug-Log.html">Debug Log</a></li>
+    <li><a href="Firewall-Log.html">Firewall Log</a></li>
+    <li><a href="One-Click-Diagnosis.html">One-Click Diagnosis</a></li>
+    <li><a href="ONT-Authentication.html">ONT Authentication</a></li>
+    <li><a href="Time-Setting.html">Time Setting</a></li>
+    <li><a href="TR-069.html">TR-069</a></li>
+    <li><a href="Advanced-Power-Management.html">Advanced Power Management</a></li>
+    <li><a href="Modify-Login-Password.html">Modify Login Password</a></li>
+    <li><a href="Intelligent-Channel-Statistics.html">Intelligent Channel Statistics</a></li>
+    <li><a href="Fault-Info-Collect.html">Fault Info Collect</a></li>
+    <li><a href="Indicator-Status-Management.html">Indicator Status Management</a></li>
+    <li><a href="Open-Source-Software Notice.html">Open Source Software Notice</a></li>
+</ul>
+</div>
+
+<div id="system-tool">
+    <div id="system-tool-reboot"><p>System Tools>VoIP Diagnose</p></div>
+    <div style="margin-left: 20px;">
+    <div class="system-tool-page">
+        <p>On this page, you can diagnose VoIP services by performing loop and circuit tests. Before performing a circuit test, disconnect the phone from the device.</p>
+    </div>
+       <b>Loop Test</b>
+       <table cellpadding="5" cellspacing="0" border="1">
+        <tr>
+            <td>POTS Port:</td>
+            <td><select name="" id=""><option value="1">1</option></select></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>Start Test</button><button>Obtain Result</button></td>
+        </tr>
+        <tr>
+            <td>Test Result:</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>A->Ground AC Voltage(V):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>B->Ground AC Voltage(V):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->B AC Voltage(V):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->Ground DC Voltage(V):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>B->Ground DC Voltage(V):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->B DC Voltage(V):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->Ground Resistance(ohm):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>B->Ground Resistance(ohm):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->B Resistance(ohm):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->Ground Capacitance(nF):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>B->Ground Capacitance(nF):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->B Capacitance(nF):</td>
+            <td>0</td>
+        </tr>
+       </table><br>
+       <b>Circuit Test</b>
+       <table cellpadding="5" cellspacing="0" border="1">
+        <tr>
+            <td>POTS Port:</td>
+            <td><select name="" id=""><option value="1">1</option></select></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>Start Test</button><button>Obtain Result</button></td>
+        </tr>
+        <tr>
+            <td>Test Result:</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>A->Ground AC Voltage(V):</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>B->Ground AC Voltage(V):</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>A->B AC Voltage(V):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->Ground DC Voltage(V):</td>
+            <td>Normal</td>
+        </tr>
+        <tr>
+            <td>B->Ground DC Voltage(V):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->B DC Voltage(V):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->Ground Resistance(ohm):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>B->Ground Resistance(ohm):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->B Resistance(ohm):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->Ground Capacitance(nF):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>B->Ground Capacitance(nF):</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>A->B Capacitance(nF):</td>
+            <td>0</td>
+        </tr>
+       </table>
+</div>
+</div>
+</div>
+
+<footer>  
+    <div style="display: inline-block; text-align:center;">
+        <p><img src="../img/QR-Code.jpg" height="50px" width="50px" alt=""></p>
+        <p>Click or scan to download the APP</p>
+    </div>
+    <div style="margin-left: 250px; display:inline-flex; align-items:center;">
+        <p><img src="../img/huawei-png-logo-footer.png" style="height:15px; width:15px; margin:5px;"  alt=""></p>
+        <p>Copyright&copy;Huawei Technologies Co, Ltd. 2009-2021. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

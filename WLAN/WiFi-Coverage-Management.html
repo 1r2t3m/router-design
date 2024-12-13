@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFI Web Application</title>
+</head>
+<style>
+.menu-bar-1 ul{
+
+    text-align: center;
+}
+.menu-bar-1 ul li{
+    list-style: none;   
+    display: inline-flex;
+    margin: 2px;
+    padding: 2px;
+}
+.menu-bar-1 ul li a:hover{
+color: #ec00a5;
+  transition: 2s;
+}
+.menu-bar-1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.top-link-bar{
+    text-align: center;
+}
+.top-link-bar a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+hr{
+    width: 1150px;
+    height: 5px;
+    background-color: #a20404;
+    margin-bottom: 0px;
+    margin-top: -10px;
+    border-color: #a20404;
+    margin-left: 0;
+}
+.merge-in-one{
+    display: inline-flex;
+}
+.menu-bar-of-wan{
+    background-color: rgb(94, 92, 92);
+    width: 250px;
+    height:360px;
+}
+.menu-bar-of-wan ul li{
+    list-style: none;
+    padding: 5px;
+    margin-left: -40px;
+}
+.menu-bar-of-wan ul li:hover{
+    background-color: rgb(221, 230, 230);
+}
+.menu-bar-of-wan ul li a:hover{
+    color: rgb(192, 12, 12);
+}
+.menu-bar-of-wan ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.wlan-configuration-page {
+    margin-left: 20px;
+    margin-bottom: 20px;
+height: 200px;
+width: 95%;
+background-color: rgb(255 231 172);
+align-content: center;
+}
+.wlan-configuration-page p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.inline-column-side{
+display: inline-flex;
+}
+
+#wlan-configuration{
+    background-color: #c4c5c6; 
+    width:900px;;
+    height:1000px;
+}
+#wlan-wlan-configuration{
+    background-color: rgb(179 179 179);
+}
+#wlan-wlan-configuration p{
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 0px;
+    align-content: center;
+}
+#wlan-configuration table{
+   width: 95%;
+    margin-left:20px;
+     background-color:white;
+}
+
+footer{
+    height: 100px;
+    width:1150px;
+    background-color: #dadada;
+    display: inline-block;
+}
+footer div{
+    font-size: 10px;
+    padding: 5px;
+    display: inline-flex;
+}
+b,h1{
+    margin-left: 20px;
+}
+</style>
+<body>
+    <div class="merge-in-one">
+<div>
+    <img src="../img/huawei-png-logo.png" alt="" style="margin-left:50px; height:60px; width:60px;">
+</div>
+<div>
+    <div class="top-link-bar"> 
+        <a href="#" style="font-size: 20px; margin-right:700px;">HS8145V5</a>
+        <a href="#" style="margin-right:-130px;">Logout</a>
+    </div>
+    <div class="menu-bar-1">
+        <ul>          
+            <li><a href="../index_of_status.html">Status</a></li>
+            <li><a href="../index_of_WAN.html">WAN</a></li>
+            <li><a href="../index_of_LAN.html">LAN</a></li>
+            <li><a href="../index_of_IPv6.html">IPv6</a></li>
+            <li><a href="../index_of_WLAN.html">WLAN</a></li>
+            <li><a href="../index_of_security.html">Security</a></li>
+            <li><a href="../index_of_route.html">Route</a></li>
+            <li><a href="../index_of_forward_rules.html">Forward Rules</a></li>
+            <li><a href="../index_of_network_app.html">Network Application</a></li>
+            <li><a href="../index_of_voice.html">Voice</a></li>
+            <li><a href="../index_of_system_tools.html">System Tools</a></li>
+            <li><a href="../index_of_bundle.html">Bundle</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<hr>
+<div class="inline-column-side">
+<div class="menu-bar-of-wan">
+
+<ul>
+    <li style="margin-top: -15px; border-bottom:#bebebe 5px;"><a href="#">2.4G Basic Network Setting</a></li>
+    <li><a href="2.4G-Advanced-Network-Setting.html">2.4G Advanced Network Setting</a></li>
+    <li><a href="5G-Basic-Network-Setting.html">5G Basic Network Setting</a></li>
+    <li><a href="5G-Advanced-Network-Setting.html">5G Advanced Network Setting</a></li>
+    <li><a href="Automatic-WiFi-Shutdown.html">Automatic WiFi Shutdown</a></li>
+    <li><a href="WiFi-Coverage-Management.html">WiFi Coverage Management</a></li>
+</ul>
+</div>
+
+<div id="wlan-configuration">
+    <div id="wlan-wlan-configuration"><p>WLAN>WIFI Coverage Management</p></div>
+    <div style="margin-left: 20px;">
+    <div class="wlan-configuration-page">
+      <p>On this page, you can specify the SSID for a Wi-Fi network and add the scanned external AP to
+        to this Wi-Fi network. Then, the external AP and this device construct an entire Wi-Fi network and 
+        you wireless devices can seamlessly access this network.
+      </p>
+    </div>
+    <div style="margin-left: 20px;">
+        <input type="checkbox" checked>Synchronize WLAN to the external AP
+    </div>
+<h1>Select a policy to Synchronize Wi-Fi parameters to the newly detected external AP.</h1>
+<div>
+   
+    <table style="padding:10px;">
+        <tr>
+       <td><input type="radio">Do not enable automatic synchronization <br></td>      
+        </tr>
+       
+        <tr>
+      <td> <input type="radio" checked>Specify the SSID for automatic synchronization.</td>
+      <td>
+        <select>
+            <option value="">SHREE SUNDARI BASIC_2.4(2.4G)</option>
+        </select></td>
+       <td>
+        <select>
+            <option value="">SHREE SUNDARI BASIC_5.8(5.8G)</option>
+        </select>
+      </td> 
+    </tr>
+    <td>
+    <div>
+        <input type="radio">Enable best-effort synchronization according to AP capabilities
+    </div></td>
+    </table>
+    <b>Roaming and Switching Configuration:</b>
+    <table cellpadding="5" cellspacing="0" border="1">
+        <tr>
+            <td>Enable roaming and switching:</td>
+            <td><input type="checkbox" checked></td>
+        </tr>
+        <tr>
+            <td>Forced switching RSSI threshold:</td>
+            <td><input type="text" value="-79" width="200px">dBm(range:-100 dBm to -66dBm default:-79dBm)</td>
+        </tr>
+        <tr>
+            <td>Conditioned switching RSSI threshold:</td>
+            <td><input type="text" value="-79" width="200px">dBm(range:-100 dBm to -66dBm default:-79dBm)</td>
+        </tr>
+        <tr>
+            <td></td>
+       <td>
+            <button>Apply</button>
+            <button>Cancel</button>
+        </td>
+    </tr>
+    </table>
+    <b>External AP List</b>
+    <table cellpadding="5" cellspacing="0" border="1">
+        <tr>
+            <th>No.</th>
+            <th>Device Model</th>
+            <th>Serial Number</th>
+            <th>Status</th>
+            <th>Online Duration</th>
+            <th>Configuration Status</th>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+</div>
+</div>
+</div>
+</div>
+
+<footer>  
+   
+    <div style="display: inline-block; text-align:center;">
+      <p><img src="../img/QR-Code.jpg" height="50px" width="50px" alt=""></p>
+        <p>Click or scan to download the APP</p>
+    </div>
+    <div style="margin-left: 250px; display:inline-flex; align-items:center;">
+        <p><img src="../img/huawei-png-logo-footer.png" style="height:15px; width:15px; margin:5px;"  alt=""></p>
+        <p>Copyright&copy;Huawei Technologies Co, Ltd. 2009-2021. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

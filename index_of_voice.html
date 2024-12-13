@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIFI Web Application</title>
+</head>
+<style>
+.menu-bar-1 ul{
+
+    text-align: center;
+}
+.menu-bar-1 ul li{
+    list-style: none;   
+    display: inline-flex;
+    margin: 2px;
+    padding: 2px;
+}
+.menu-bar-1 ul li a:hover{
+color: #ec00a5;
+  transition: 2s;
+}
+.menu-bar-1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.top-link-bar{
+    text-align: center;
+}
+.top-link-bar a{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+hr{
+    width: 1150px;
+    height: 5px;
+    background-color: #a20404;
+    margin-bottom: 0px;
+    margin-top: -10px;
+    border-color: #a20404;
+    margin-left: 0;
+}
+.merge-in-one{
+    display: inline-flex;
+}
+.menu-bar-of-wan{
+    background-color: rgb(94, 92, 92);
+    width: 250px;
+    height:360px;
+}
+.menu-bar-of-wan ul li{
+    list-style: none;
+    padding: 5px;
+    margin-left: -40px;
+}
+.menu-bar-of-wan ul li:hover{
+    background-color: rgb(221, 230, 230);
+}
+.menu-bar-of-wan ul li a:hover{
+    color: rgb(192, 12, 12);
+}
+.menu-bar-of-wan ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.firewall-level-page {
+    margin-left: 20px;
+    margin-bottom: 20px;
+height: 50px;
+width: 95%;
+background-color: rgb(255 231 172);
+align-content: center;
+}
+.firewall-level-page p{
+    margin-left: 20px;
+}
+.inline-column-side{
+display: inline-flex;
+}
+
+#security-configuration{
+    background-color: #c4c5c6; 
+    width:900px;;
+    height:1200px;
+}
+#firewall-level-configuration{
+    background-color: rgb(179 179 179);
+}
+#firewall-level-configuration p{
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 0px;
+    align-content: center;
+}
+#security-configuration table{
+   width: 95%;
+    margin-left:20px;
+     background-color:white;
+}
+
+footer{
+    height: 100px;
+    width:1150px;
+    background-color: #dadada;
+    display: inline-block;
+}
+footer div{
+    font-size: 10px;
+    padding: 5px;
+    display: inline-flex;
+}
+</style>
+<body>
+    <div class="merge-in-one">
+<div>
+    <img src="img/huawei-png-logo.png" alt="" style="margin-left:50px; height:60px; width:60px;">
+</div>
+<div>
+    <div class="top-link-bar"> 
+        <a href="#" style="font-size: 20px; margin-right:700px;">HS8145V5</a>
+        <a href="#" style="margin-right:-130px;">Logout</a>
+    </div>
+    <div class="menu-bar-1">
+        <ul>          
+            <li><a href="./index_of_status.html">Status</a></li>
+            <li><a href="./index_of_WAN.html">WAN</a></li>
+            <li><a href="./index_of_LAN.html">LAN</a></li>
+            <li><a href="./index_of_IPv6.html">IPv6</a></li>
+            <li><a href="./index_of_WLAN.html">WLAN</a></li>
+            <li><a href="./index_of_security.html">Security</a></li>
+            <li><a href="./index_of_route.html">Route</a></li>
+            <li><a href="./index_of_forward_rules.html">Forward Rules</a></li>
+            <li><a href="./index_of_network_app.html">Network Application</a></li>
+            <li><a href="./index_of_voice.html">Voice</a></li>
+            <li><a href="./index_of_system_tools.html">System Tools</a></li>
+            <li><a href="./index_of_bundle.html">Bundle</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+<hr>
+<div class="inline-column-side">
+<div class="menu-bar-of-wan">
+
+<ul>
+    <li style="margin-top: -15px; border-bottom:#bebebe 5px;"><a href="#">VoIP Basic Configuration</a></li>
+    <li><a href="voice/VoIP-Advanced-Configuration.html">VoIP Advanced Configuration</a></li>
+    <li><a href="voice/SIP-H.248 Protocol-Conversion.html">SIP/H.248 Protocol Conversion</a></li>
+</ul>
+</div>
+
+<div id="security-configuration">
+    <div id="firewall-level-configuration"><p>Voice>VoIP Basic Configuration</p></div>
+    <div style="margin-left: 20px;">
+    <div class="firewall-level-page">
+        <p>On this page, you can set basic SIP parameters.</p>
+        
+    </div>
+    <div>
+        <b>Basic Profile Prameters(SIP)</b>
+        <table cellspacing="0"; cellpadding="5"; border="1">
+           <tr style="background-color: #bebebe;">
+           <td style="width: 300px;">Outbound Proxy Server Address:</td>
+           <td><input type="text" width="200px">(IP or domain)</td>
+           </tr>
+           <tr style="background-color: #bebebe;">
+            <td>Outbound Proxy Server Port:</td>
+            <td><input type="text" value="5060" width="200px">(0-65535)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Address of the Standby Outbound Proxy Server:</td>
+                <td><input type="text" width="200px">(IP or domain)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Port of the Standby Outbound Proxy Server:</td>
+                <td><input type="text" value="5060" width="200px">(0-65535)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Address of the Primary Proxy Server:</td>
+                <td><input type="text" width="200px">(IP or domain)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Port of the Primary  Proxy Server:</td>
+                <td><input type="text" value="5060" width="200px">(0-65535)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Address of the Primary Proxy Server:</td>
+                <td><input type="text" width="200px">(IP or domain)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Port of the Primary  Proxy Server:</td>
+                <td><input type="text" value="5060" width="200px">(0-65535)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Home Domain:</td>
+                <td><input type="text" width="200px">(IP or domain)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Local Port:</td>
+                <td><input type="text" value="5060" width="200px"><span style="color: red;"></span>(0-65535)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Digitmap:</td>
+                <td><textarea name="" id="" cols="30" rows="5">
+                    [xABCD]S[xABCD]#
+                </textarea></td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Digitmap Matching Mode:</td>
+                <td><select name="" id=""><option value="">Min</option></select></td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Registration Period:</td>
+                <td><input type="text" value="600" width="200px">(1-65534s)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Signaling Port:</td>
+                <td><select style="width: 30px;"><option value=""></option></select>(Select the name of the WAN that will carry the voice signaling messages.)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Media Port:</td>
+                <td><select style="width: 30px;"><option value=""></option></select>(Select the name of the WAN that will carry the voice media. The name is the same as the signaling port name when it is empty)</td>
+            </tr>
+            <tr style="background-color: #bebebe;">
+                <td>Region:</td>
+                <td><select style="width: 200px;"><option value=""></option></select></td>
+            </tr>
+        </table><br>
+        <b>Basic User Parameters(SIP)</b>
+        <div style="margin-left:750px; padding:10px;">
+            <button>New</button>
+            <button>Delete</button>
+        </div>
+        <table cellpadding="5" cellspacing="0" border="1">
+            <tr>
+                <th></th>
+                <th>No.</th>
+                <th>URL</th>
+                <th>Registration User Name</th>
+                <th>Authentication User Name</th>
+                <th>Password</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>1</td>
+                <td>-</td>
+                <td>-</td>
+                <td>******</td>
+                <td>1</td>
+            </tr>
+        </table><br>
+        <table cellpadding="5" cellspacing="0" border="1">
+            <tr>
+                <td style="width: 300px;">Enable User:</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>URL:</td>
+                <td><input type="text" width="200px">(URL)</td>
+            </tr>
+            <tr>
+                <td>Registration User Name:</td>
+                <td><input type="text" width="200px">(phone number)</td>
+            </tr>
+            <tr>
+                <td>Associated POTS Port:</td>
+                <td><select><option value="">1</option><option value="">2</option><option value="">3</option></select></td>
+            </tr>
+            <tr>
+                <td>Authentication User Name:</td>
+                <td><input type="text" width="200px">(The length must be between 0-64)</td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="text" width="200px">(The length must be between 0-64. Double-Click to select all.)</td>
+            </tr>
+            <tr>
+                <td>
+                   
+                </td>
+                <td> 
+                    <button>Apply</button>
+                    <button>Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div></div>
+</div>
+
+<footer>  
+   
+    <div style="display: inline-block; text-align:center;">
+    <p><img src="img/QR-Code.jpg" height="50px" width="50px" alt=""></p>
+        <p>Click or scan to download the APP</p>
+    </div>
+    <div style="margin-left: 250px; display:inline-flex; align-items:center;">
+        <p><img src="img/huawei-png-logo-footer.png" style="height:15px; width:15px; margin:5px;"  alt=""></p>
+        <p>Copyright&copy;Huawei Technologies Co, Ltd. 2009-2021. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
